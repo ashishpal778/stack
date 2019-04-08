@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+//push element.............
+void push(int *aa, int x ,int &y){
+     y++;
+     if(y!=9999)
+     aa[y]=x;}
+//pop element...............    
+int pop(int *aa, int &y){
+if(y!=-1)
+return aa[y--];
+     
+}
+//traverse element.............
+void traverse(int *aa,int y){
+     for(int i=0;i<y+1;i++)
+     cout<<aa[i]<<endl;
+}
+
+int main(void){
+    int n;
+    int a[100000] ,topa=-1;
+    int b[100000] ,topb=-1;
+    for(int i=0;i<5;i++){
+        
+    cin>>n;
+    push(a, n,topa);
+//    push(b, n ,topb++);
+  
+    }
+//    int p=pop(a,topa);
+   traverse(a,topa);
+}
